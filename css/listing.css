@@ -1,0 +1,266 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: rgb(255, 255, 255);
+}
+#screen_name{
+  width: 90%;
+  border: solid 1px rgba(71, 71, 71, 0.459);
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px rgba(49, 49, 49, 0.65);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.headerimg{
+  width: 30px;
+  height: 30px;
+}
+#banner{
+  margin-top: -35px;
+}
+#banner li img{
+  margin-top: 15px;
+}
+main{
+  background: #f4f4f4;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns:15% 1fr ;
+}
+#main{
+  grid-row: 1/1;
+  grid-column: 2/2;
+}
+.side{
+  grid-row: 1/1;
+  grid-column: 1/2;
+  border-right: 6px solid #000; 
+  font-size: 13px;
+  display: inline-block;
+  padding: 1em 1.6em;
+  margin: 0 0 5px;
+  background: #fff;
+  border: 0.15em solid #333;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.side:hover {
+background: #333;
+color: #fff;
+}
+
+div{
+  padding:5px;
+  /*ここから*/
+}
+
+#image{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 110px;
+  border-bottom:solid rgb(155, 152, 152);
+  border-top:solid rgb(155, 152, 152);
+}
+
+#image h2{
+    font-size: 25px;
+}
+
+#category{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 110px;
+  border-bottom:solid rgb(155, 152, 152);
+}
+
+#category h2{
+    font-size: 25px;
+}
+
+
+
+/* body {
+  font: 100%/1.5 AvenirNext-Regular, Corbel, "Lucida Grande", "Trebuchet Ms", sans-serif;
+  color: #111; 
+  background-color: #fff;
+  margin: 2em 10%
+} */
+
+.dropdown {
+  position: relative;
+  display:block;
+  margin-top:0.5em;
+  padding:0;
+  border:1px solid #888;
+}
+
+/* This is the native select, we're making everything the text invisible so we can see the button styles in the wrapper */
+.dropdown select {
+  width:100%;
+  margin:0;
+  background:none;
+  border: 1px solid transparent;
+  outline: none;
+  font-size:1.25em;
+
+  color: #444;
+  padding: .6em 1.9em .5em .8em;
+  line-height:1.3;
+}
+
+.dropdown::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  top: 50%;
+  right: 1em;
+  margin-top:-4px;
+  z-index: 2;
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12'%3E%3Cpolygon fill='rgb(102,102,102)' points='8,12 0,0 16,0'/%3E%3C/svg%3E") 0 0 no-repeat;  
+  pointer-events:none;
+}
+
+
+
+/* Hover style */
+.dropdown:hover {
+  background: rgb(155, 152, 152);
+	color: #fff;
+}
+
+/* Focus style */
+select:focus {
+  outline:none;
+  box-shadow: 0 0 1px 3px rgba(180,222,250, 1);
+  background-color:transparent;
+  color: #222;
+  border:1px solid #aaa;
+}
+
+
+/* Firefox focus has odd artifacts around the text, this kills that */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+option {
+  font-weight:normal;
+}
+
+
+/* These are just demo button-y styles, style as you like */
+
+
+.output {
+  margin: 0 auto;
+  padding: 1em; 
+}
+.colors {
+  padding: 2em;
+  color: #fff;
+  display: none;
+}
+
+
+#state{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 110px;
+  border-bottom:solid rgb(155, 152, 152);
+}
+#state h2{
+    font-size: 25px;
+}
+
+#explantitle{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    background: #f4f4f4;
+}
+#explantitle h2{
+    font-size: 25px;
+}
+#explan{
+    padding: 100px;
+}
+#explan td{
+  font-size: 20px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+#name{
+    padding: 5px;
+    border:1px solid #888;
+}
+#place{
+  width: 300px;
+  padding: 5px;
+  border: solid 1px #000;
+}
+#val{
+  padding: 5px;
+  border: solid 1px #000;
+}
+
+#submit {
+  display: block;
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: rgb(100, 100, 100);
+  color: #fff;
+  border-radius: 10px;
+  margin: 0px auto 20px;
+}
+
+section{
+
+  border: 0.5px;
+
+  margin: 20px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #888;
+}
+
+small{
+  color: red;
+  font-size: 0.5em;
+}
+input{
+  border:1px solid #888;
+  margin-left: 20px;
+  padding: 10px;
+}
+#txtarea{
+  border:1px solid #888;
+  padding: 10px;
+  margin-left: 20px;
+}
+select{
+  border: solid 1px #000;
+}
+
+#main{
+  grid-row: 1/1;
+  grid-column: 2/2;
+}
+footer{
+  width: 100%;
+  background-color: rgb(100, 100, 100);
+}
+footer p{
+  padding: 20px;
+  text-align: center;
+  color:#fff;
+}
